@@ -43,7 +43,7 @@ services:
         APP_VERSION: ${APP_VERSION:-local}
     # TODO 2: tên image = <APP_IMAGE>:<APP_TAG>
     #         (mặc định APP_IMAGE=devops-final-app, APP_TAG=latest)
-    image: devopas-final-app:${APP_TAG:-latest}
+    image: image: ${APP_IMAGE:-devops-final-app}:${APP_TAG:-latest}
     container_name: devops-final-app-de005
     restart: unless-stopped
     environment:
